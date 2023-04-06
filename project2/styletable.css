@@ -1,0 +1,23 @@
+table {
+    border: 20px solid black; /*двойная обводка в таблице*/
+    /*border-collapse: separate;*/
+    border-spacing: 10px;
+    /*border-image: linear-gradient(rgb(182, 37, 97),rgb(110, 110, 240)) 50/55px;*/
+    border-image: url("sea.jfif")1;
+}
+th {
+    border: 1px solid red;
+}
+td {
+    border: 1px solid blue;
+}
+#uniq {
+    width: 200px;
+    height: 50px;
+    text-align: right;
+    background-color: cornflowerblue;
+    /* empty-cells:hide - убирает пустую ячейку можно применять для всей таблицы*/
+}
+table {
+    empty-cells:hide;
+}
