@@ -1,0 +1,91 @@
+.elem {
+    width: 460px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    margin: 20px;
+}
+.elem-sizing {
+    box-sizing: border-box;
+    width: 460px;
+    padding: 15px;
+    border: 2px solid #ccc;
+    margin: 20px;
+}
+.parent {
+    border:#ccc 2px solid;
+    width: 400px;
+    height: 100px;
+   
+}
+.child {
+    border:#230202 2px solid;
+    width: 20%;
+    float: left;
+    box-sizing: border-box; /*вмещает текс в бокс*/
+    margin-right: 1px; /*если прописывает это св-во то не вмещается в бокс*/
+}
+.inline {
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px;
+    display: inline;
+}
+.inline-block {
+    background-color: thistle;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block; /*текст не  накладывается друг на друга в отличии от inline*/
+}
+p.line::first-line {
+    color:tomato;
+    text-shadow: 1px 1px 1px #333;
+    font-family: "segoe Script", cursive;
+}
+p.letter::first-letter {
+    display: inline-block;
+    color: violet;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid #1edc1e;
+    padding: 2px 8px;
+    margin-right:10px;
+    margin-top: 7px;
+}
+main p:first-child {
+    font-family: "segoe Script", cursive;
+    color:violet;
+    font-weight: bold;
+    border-bottom: 3px double #2c5dcc;
+}
+main p:nth-child(3n) {
+    color:tomato;
+}
+main p:nth-child(5) {
+    font-style: italic;
+    color:turquoise;
+}
+main p:last-child {
+    padding: 15px;
+    background-color: #48b939;
+    border-left: 3px double #5532b6;
+}
+span {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 8px;
+}
+mark:only-child {
+    background-color:#45abf5 ;
+    color:#fff;
+    padding: 3px;
+    font-family: serif;
+    font-style: italic;
+}
+.elem1 {
+    color: violet;
+    text-transform: uppercase; /*если будет несколько элементов*/
+}
+.elem1:only-child {
+    font-weight: bold; /*если будет один, то он будет жирный*/
+    color:red;
+}
